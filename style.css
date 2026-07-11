@@ -1,0 +1,94 @@
+/* ===== Basic page setup ===== */
+html {
+  /* This one line makes clicking a nav link glide down the page
+     instead of jumping instantly */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gives scrolled-to sections a little breathing room above them,
+   so the header bar isn't jammed against the top edge */
+section {
+  scroll-margin-top: 20px;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto; /* centers the whole page content */
+}
+
+/* ===== Site Title ===== */
+.site-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #d4a017; /* golden yellow */
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* ===== Navigation Buttons ===== */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #1a1a1a;
+  background-color: #d4a017;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  /* Extra rules needed because this is now an <a> tag, not a <button> */
+  text-decoration: none;   /* removes the underline links normally have */
+  text-align: center;      /* centers the text since <a> is inline by default */
+  display: inline-block;   /* lets padding/width apply properly to a link */
+}
+
+.nav-btn:hover {
+  background-color: #c2940f; /* slightly darker on hover */
+}
+
+/* ===== Section Header Bar ("About us") ===== */
+.section-header {
+  background-color: #ffd95e;
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* ===== Content Box ===== */
+.content-box {
+  background-color: #ffd95e;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 50px; /* space before the next section starts */
+}
+
+.content-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1a1a1a;
+}
