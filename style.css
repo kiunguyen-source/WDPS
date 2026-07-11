@@ -71,7 +71,7 @@ section {
   margin-bottom: 20px;
 }
 
-.section-header h2 {
+h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
@@ -86,7 +86,7 @@ section {
   margin-bottom: 50px; /* space before the next section starts */
 }
 
-.content-box p {
+p {
   margin: 0;
   font-size: 16px;
   line-height: 1.8;
